@@ -1,4 +1,4 @@
-import { APP_NAME } from "@/common/constants"
+import { APP_NAME } from "@/common/constants";
 
 export const OPTIONS = [
   {
@@ -21,6 +21,4 @@ export const OPTIONS = [
     link: "/",
     name: "CONTACT",
   },
-]
-
-
+];

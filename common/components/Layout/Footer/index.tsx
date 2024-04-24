@@ -11,7 +11,6 @@ const Footer = ({
 }: {
   readonly contentWidth?: "medium" | "small" | "wide" | "full";
 }) => {
-
   const currentYear = new Date().getFullYear();
 
   return (

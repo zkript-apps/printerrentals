@@ -1,22 +1,22 @@
-"use client"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { ReactNode } from "react"
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { ReactNode } from "react";
 
 interface Tab {
-  name: string
-  icon?: JSX.Element
-  link: string
-  isSelected?: boolean
+  name: string;
+  icon?: JSX.Element;
+  link: string;
+  isSelected?: boolean;
 }
 
 interface TabsProps {
-  tabs: Tab[],
-  className: ReactNode
+  tabs: Tab[];
+  className: ReactNode;
 }
 
 const Tabs = ({ tabs, className }: TabsProps) => {
-  const currentPath = usePathname()
+  const currentPath = usePathname();
 
   return (
     <div className={`${className}`}>
@@ -36,20 +36,16 @@ const Tabs = ({ tabs, className }: TabsProps) => {
         </select>
       </div>
       <div className="hidden sm:block">
-          <nav className="-mb-px flex space-x-8" aria-label="Tabs">
-            {tabs.map((tab) => (
-              <Link key={tab.name} href={tab.link} passHref={true}>
-                <div
-                 className="mt-6 font-semibold"
-                >
-                  {tab.name}
-                </div>
-              </Link>
-            ))}
-          </nav>
+        <nav className="-mb-px flex space-x-8" aria-label="Tabs">
+          {tabs.map((tab) => (
+            <Link key={tab.name} href={tab.link} passHref={true}>
+              <div className="mt-6 font-semibold">{tab.name}</div>
+            </Link>
+          ))}
+        </nav>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Tabs
+export default Tabs;
