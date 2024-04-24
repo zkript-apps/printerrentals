@@ -52,7 +52,6 @@ const Header = () => {
     }
   };
 
-
   return (
     <nav className="bg-gray-50 flex justify-between items-center h-16 p-4">
       <div className="pl-2 md:pl-8">
@@ -78,7 +77,9 @@ const Header = () => {
               <Link href={link.link}>
                 <div
                   className="flex justify-between mb-2 items-center hover:text-orange-400 transition-colors duration-200"
-                  onClick={(e) => link.subMenu && handleSubMenuClick(e, link.name)}
+                  onClick={(e) =>
+                    link.subMenu && handleSubMenuClick(e, link.name)
+                  }
                 >
                   <div className="w-full">
                     <Typography

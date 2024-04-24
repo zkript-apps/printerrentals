@@ -1,6 +1,6 @@
-import * as React from "react"
-import { cn } from "@/common/helpers/cn"
-import { VariantProps, cva } from "class-variance-authority"
+import * as React from "react";
+import { cn } from "@/common/helpers/cn";
+import { VariantProps, cva } from "class-variance-authority";
 const typographyVariants = cva("", {
   variants: {
     variant: {
@@ -25,16 +25,16 @@ const typographyVariants = cva("", {
     variant: "p",
     fontWeight: "normal",
   },
-})
+});
 export interface TypographyProps
   extends React.DetailsHTMLAttributes<HTMLDivElement>,
     VariantProps<typeof typographyVariants> {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 const Typography = React.forwardRef<HTMLDivElement, TypographyProps>(
   ({ variant, fontWeight, className, children }, ref) => {
-    const Comp = variant ?? "p"
+    const Comp = variant ?? "p";
     return (
       <Comp
         ref={ref}
@@ -42,9 +42,9 @@ const Typography = React.forwardRef<HTMLDivElement, TypographyProps>(
       >
         {children}
       </Comp>
-    )
-  }
-)
-Typography.displayName = "Typography"
+    );
+  },
+);
+Typography.displayName = "Typography";
 
-export { Typography, typographyVariants }
+export { Typography, typographyVariants };
