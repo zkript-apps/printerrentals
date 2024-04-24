@@ -1,3 +1,4 @@
+import Header from "@/common/components/Layout/Header"
 import { APP_NAME } from "@/common/constants"
 import Home from "@/module/Home"
 import { Metadata } from "next"
@@ -8,7 +9,9 @@ export const metadata: Metadata = {
 }
 
 const HomePage = () => {
-  return <Home />
+  return (
+    <Header/>
+  )
 }
 
 export default HomePage
