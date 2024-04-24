@@ -13,7 +13,7 @@ const Cta = () => {
             variant="h3"
             className="text-white md:pb-0 md:pt-0 pt-4 pb-4 text-sm md:pl-8"
           >
-            CALL US NOW! <br/> <br/>
+            CALL US NOW! <br /> <br />
             <span className="text-xl align-items-center"> (02) 7354 1271</span>
           </Typography>
         </div>
