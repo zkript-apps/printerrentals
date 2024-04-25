@@ -6,7 +6,7 @@ import { WidthWrapper } from "@/common/components/WidthWrapper";
 const WhySection = () => {
   return (
     <div className="bg-gray-100">
-      <WidthWrapper width='wide'className="">
+      <WidthWrapper width="wide" className="">
         <HomeImageText img={"/whyrentimage.png"} description={undefined}>
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             WHY RENT PRINTER?
