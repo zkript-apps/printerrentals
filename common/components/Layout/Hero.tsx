@@ -7,7 +7,8 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
-       <div className="w-full
+      <div
+        className="w-full
             h-screen
             relative
             overflow-hidden
@@ -27,7 +28,8 @@ const Hero = () => {
             before:from-blue-900
             before:to-yellow-500
             before:opacity-75
-            before:z-[-5]">
+            before:z-[-5]"
+      >
         <div className="flex flex-col items-center justify-center h-screen p-5 relative z-10">
           <Typography className="text-center text-white text-5xl">
             THE #1 PRINTER RENTAL <br /> IN THE PHILIPPINES
@@ -59,7 +61,6 @@ const Hero = () => {
           <LucideCircleChevronDown color="white" />
         </div>
       </div>
-     
     </>
   );
 };

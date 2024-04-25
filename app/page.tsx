@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <>
       <Home />
-      <Footer/>
+      <Footer />
     </>
   );
 };

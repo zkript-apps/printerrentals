@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const Hero2 = () => {
   return (
-    <div className="w-full
+    <div
+      className="w-full
             h-screen
             max-h-[32rem]
             p-24
@@ -25,10 +26,13 @@ const Hero2 = () => {
             before:to-blue-500
             before:opacity-75
             before:z-[-5]
-			">
-                	<h1 className="text-black text-4xl">Image background with overlay gradient</h1>
-</div>
-  )
-}
+			"
+    >
+      <h1 className="text-black text-4xl">
+        Image background with overlay gradient
+      </h1>
+    </div>
+  );
+};
 
-export default Hero2
+export default Hero2;
