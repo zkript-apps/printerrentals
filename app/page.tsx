@@ -1,3 +1,4 @@
+import FeatureSection from "@/common/components/Layout/Feature";
 import Footer from "@/common/components/Layout/Footer";
 import { APP_NAME } from "@/common/constants";
 import Home from "@/module/Home";
@@ -11,8 +12,9 @@ export const metadata: Metadata = {
 const HomePage = () => {
   return (
     <>
-      <Home />
-      <Footer />
+      {/* <Home /> */}
+      <FeatureSection/>
+      {/* <Footer /> */}
     </>
   );
 };
