@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <>
       {/* <Home /> */}
-      <FeatureSection/>
+      <FeatureSection />
       {/* <Footer /> */}
     </>
   );
