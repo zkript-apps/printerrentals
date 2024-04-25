@@ -12,13 +12,13 @@ const HomeImageText: React.FC<HomeImageTextProps> = ({
   img,
   description,
   children,
-  isRightText = false
+  isRightText = false,
 }) => {
-
   return (
     <div>
-     
-      <div className={`md:flex  gap-4 p-6 ${isRightText ? "flex-row-reverse" : "" }`}>
+      <div
+        className={`md:flex  gap-4 p-6 ${isRightText ? "flex-row-reverse" : ""}`}
+      >
         <>
           <div className="md:w-1/2 md:pr-4">
             {children ? children : <p>{description}</p>}
