@@ -1,6 +1,5 @@
 import React, { Children, ReactNode } from "react";
-import { Typography } from "../../common/components/ui/Typography";
-import { ReactLoadableManifest } from "next/dist/server/load-components";
+
 
 interface HomeImageTextProps {
   img: string;
@@ -17,7 +16,7 @@ const HomeImageText: React.FC<HomeImageTextProps> = ({
   return (
     <div>
       <div
-        className={`md:flex  gap-4 p-6 ${isRightText ? "flex-row-reverse" : ""}`}
+        className={`md:flex gap-2 p-6 ${isRightText ? "flex-row-reverse" : ""}`}
       >
         <>
           <div className="md:w-1/2 md:p-14 md:pr-8">
