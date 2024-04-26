@@ -7,7 +7,11 @@ const WhatWeOffer = () => {
   return (
     <div className="">
       <WidthWrapper width="wide" className="">
-        <HomeImageText img={"/what-we-offer-now.png"} isRightText={true} description={undefined}>
+        <HomeImageText
+          img={"/what-we-offer-now.png"}
+          isRightText={true}
+          description={undefined}
+        >
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             WHAT WE OFFER
           </Typography>
