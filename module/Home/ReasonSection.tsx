@@ -41,7 +41,8 @@ const ReasonSection = () => {
                 <ul>
                   <li>
                     <div className="flex items-center gap-2 pb-2">
-                    <LucideSquareCheck color="#FFA500" />{items.label}
+                      <LucideSquareCheck color="#FFA500" />
+                      {items.label}
                     </div>
                   </li>
                 </ul>

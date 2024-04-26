@@ -1,6 +1,5 @@
 import React, { Children, ReactNode } from "react";
 
-
 interface HomeImageTextProps {
   img: string;
   description: string | React.ReactNode;
