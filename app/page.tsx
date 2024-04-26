@@ -1,3 +1,4 @@
+import Header from "@/common/components/Layout/Header";
 import Footer from "@/common/components/Layout/Footer";
 import { APP_NAME } from "@/common/constants";
 import Home from "@/module/Home";
@@ -12,6 +13,7 @@ const HomePage = () => {
   return (
     <>
       <Home />
+      <Header />
       <Footer />
     </>
   );
