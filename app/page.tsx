@@ -1,6 +1,3 @@
-import Hero2 from "@/common/components/Hero2";
-import Footer from "@/common/components/Layout/Footer";
-import Hero from "@/common/components/Layout/Hero";
 import { APP_NAME } from "@/common/constants";
 import Home from "@/module/Home";
 import { Metadata } from "next";
@@ -11,12 +8,7 @@ export const metadata: Metadata = {
 };
 
 const HomePage = () => {
-  return (
-    <>
-      <Home />
-      <Footer />
-    </>
-  );
+  return <Home />;
 };
 
 export default HomePage;
