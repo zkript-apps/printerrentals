@@ -14,7 +14,6 @@ const HomeImageText: React.FC<HomeImageTextProps> = ({
   children,
   isRightText = false,
 }) => {
-  
   return (
     <div>
       <div
@@ -26,7 +25,11 @@ const HomeImageText: React.FC<HomeImageTextProps> = ({
           </div>
           <div className="flex justify-center md:w-1/2 md:p-14">
             <div className="w-100 h-100 rounded-lg md:pt-0 pt-8">
-              <img src={img} alt="Test" className="w-100 h-100 rounded-lg animate-fade" />
+              <img
+                src={img}
+                alt="Test"
+                className="w-100 h-100 rounded-lg animate-fade"
+              />
             </div>
           </div>
         </>

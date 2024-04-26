@@ -9,15 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-				fade: 'fadeIn 1s ease-in-out',
-			},
+        fade: "fadeIn 1s ease-in-out",
+      },
 
-			keyframes: {
-				fadeIn: {
-					from: { opacity: '0' },
-					to: { opacity: '1' },
-				},
-			},
+      keyframes: {
+        fadeIn: {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

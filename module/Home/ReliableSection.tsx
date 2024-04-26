@@ -7,7 +7,10 @@ const ReliableSection = () => {
   return (
     <div className="bg-gray-100 ">
       <WidthWrapper width="wide" className="">
-        <HomeImageText img={"/reliable-printer-rental.png"} description={undefined}>
+        <HomeImageText
+          img={"/reliable-printer-rental.png"}
+          description={undefined}
+        >
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             RELIABLE PRINTER RENTAL - AND MORE
           </Typography>
