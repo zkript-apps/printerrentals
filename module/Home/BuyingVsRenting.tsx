@@ -7,7 +7,11 @@ const BuyingVsRenting = () => {
   return (
     <div className="bg-gray-100">
       <WidthWrapper width="wide" className="">
-        <HomeImageText img={"/buying-and-renting.png"} isRightText={true} description={undefined}>
+        <HomeImageText
+          img={"/buying-and-renting.png"}
+          isRightText={true}
+          description={undefined}
+        >
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             BUYING VS. RENTING
           </Typography>
