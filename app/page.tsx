@@ -1,5 +1,3 @@
-import Header from "@/common/components/Layout/Header";
-import Footer from "@/common/components/Layout/Footer";
 import { APP_NAME } from "@/common/constants";
 import Home from "@/module/Home";
 import { Metadata } from "next";
@@ -10,13 +8,7 @@ export const metadata: Metadata = {
 };
 
 const HomePage = () => {
-  return (
-    <>
-      <Home />
-      <Header />
-      <Footer />
-    </>
-  );
+  return <Home />;
 };
 
 export default HomePage;
