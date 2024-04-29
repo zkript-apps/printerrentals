@@ -1,5 +1,17 @@
+import Cta from "@/common/components/Layout/Cta";
+import FeatureSection from "@/common/components/Layout/Feature";
+import Header from "@/common/components/Layout/Header";
+import Hero from "@/common/components/Layout/Hero";
 import { APP_NAME } from "@/common/constants";
 import Home from "@/module/Home";
+import BuyingVsRenting from "@/module/Home/BuyingVsRenting";
+import ClientsSection from "@/module/Home/ClientsSection";
+import ReasonSection from "@/module/Home/ReasonSection";
+import ReliableSection from "@/module/Home/ReliableSection";
+import WhatWeOffer from "@/module/Home/WhatWeOffer";
+import WhoWeAreSection from "@/module/Home/WhoWeAreSection";
+import WhySection from "@/module/Home/WhySection";
+import WhyUsSection from "@/module/Home/WhyUsSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,7 +20,22 @@ export const metadata: Metadata = {
 };
 
 const HomePage = () => {
-  return <Home />;
+  return  (
+    <div>
+      <Hero />
+      <FeatureSection/>
+      <WhySection/>
+      <ReasonSection/>
+      <ReliableSection/>
+      <BuyingVsRenting/>
+      <WhoWeAreSection/>
+      <WhatWeOffer/>
+      <WhyUsSection/>
+      <ClientsSection/>
+      <Cta/>
+    </div>
+
+  ) 
 };
 
 export default HomePage;

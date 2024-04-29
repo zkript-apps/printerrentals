@@ -15,7 +15,7 @@ const WhatWeOffer = () => {
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             WHAT WE OFFER
           </Typography>
-          <pre>
+          <code className="font-sans md:whitespace-pre-wrap">
             {`We carry several brands and models of printers that you can 
 select from, depending on your preference and business 
 needs. You’ll be surprised to see how affordable each unit 
@@ -44,7 +44,7 @@ of printer models and we will also do the pleasure of refilling
 them for you. Literally, all you have to do is sit back and 
 maybe have a cup of coffee or tea while we get on with what 
 we do best.`}
-          </pre>
+          </code>
         </HomeImageText>
       </WidthWrapper>
     </div>

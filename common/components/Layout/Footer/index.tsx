@@ -14,7 +14,7 @@ const Footer = ({
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="fixed w-full pb-6 pt-6 2xl:pt-10 bottom-0 border-t border-gray-200 mt-12">
+    <footer className=" w-full pb-6 pt-20 2xl:pt-10 bottom-0 border-t border-gray-200">
       <WidthWrapper width={contentWidth}>
         <div className="md:flex pb-4">
           <div className="md:flex-1 pb-4 md:text-center md:pb-0 md:mr-4 border-b md:border-b-0">

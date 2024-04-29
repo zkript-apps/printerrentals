@@ -11,7 +11,7 @@ const WhoWeAreSection = () => {
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             WHO WE ARE
           </Typography>
-          <pre>
+          <code className="font-sans md:whitespace-pre-wrap">
             {`Printer Rentals PH is a full servicer printer rental store that 
 started back in 2004. Through the years of consistent hard 
 work and the goal of providing excellent service to our 
@@ -31,7 +31,7 @@ to make it happen. Above all, being a Christian company, we
 truly acknowledge that God is the true owner of the company 
 and we are all on a mission to provide business solutions 
 that are in accordance with the teachings of the Lord.`}
-          </pre>
+          </code>
         </HomeImageText>
       </WidthWrapper>
     </div>

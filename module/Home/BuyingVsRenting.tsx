@@ -5,7 +5,7 @@ import { WidthWrapper } from "@/common/components/WidthWrapper";
 
 const BuyingVsRenting = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="">
       <WidthWrapper width="wide" className="">
         <HomeImageText
           img={"/buying-and-renting.png"}
@@ -15,7 +15,7 @@ const BuyingVsRenting = () => {
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             BUYING VS. RENTING
           </Typography>
-          <pre>
+          <code className="font-sans md:whitespace-pre-wrap">
             {`At first glance, you might think that buying printers would be
 more practical for your company. Well, this is a common 
 misconception among startup businesses. In the hope of 
@@ -33,7 +33,7 @@ parts and toners, will be supplied since all of these are
 already included in your chosen package. The convenience is 
 obviously unmatched since you no longer have to think 
 about your cartridges, toners, and inks.`}
-          </pre>
+          </code>
         </HomeImageText>
       </WidthWrapper>
     </div>

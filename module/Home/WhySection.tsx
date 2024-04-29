@@ -5,14 +5,14 @@ import { WidthWrapper } from "@/common/components/WidthWrapper";
 
 const WhySection = () => {
   return (
-    <div className="bg-gray-100">
+    <div id="whyRentPrinter" className="bg-gray-100">
       <WidthWrapper width="wide" className="">
         <HomeImageText img={"/whyrentimage.png"} description={undefined}>
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             WHY RENT PRINTER?
           </Typography>
-          <pre>
-            {`      Do you want to know why printer rental saves you a lot of money?
+          <p className="font-sans md:whitespace-pre-wrap">
+            {`Do you want to know why printer rental saves you a lot of money?
 Because the maintenance of all the printers that you rent, the toner
 and broken parts will be supplied to you, because it is included to
 the package that you will pick. When you think something is not
@@ -21,9 +21,8 @@ response with your concern.
     Yes, we will go to your place to fix it so you do not need to bring
 the printers in our office. Therefore, you can relax and let us do
 the work. However, if the printer does not fix immediately, we will
-provide you a temporary replacement so your day-to-day operations
-will not be interrupted. Sound good right? Contact us now!`}
-          </pre>
+provide you a temporary replacement so your day-to-day operations will not be interrupted. Sound good right? Contact us now!`}
+          </p>
         </HomeImageText>
       </WidthWrapper>
     </div>
