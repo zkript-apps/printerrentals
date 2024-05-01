@@ -1,6 +1,6 @@
-import Cta from "@/module/Home/Cta";
+import Cta from "@/common/components/Layout/Cta";
 import FeatureSection from "@/module/Home/Feature";
-import Hero from "@/common/components/Layout/Hero";
+import Hero from "@/module/Home/Hero";
 import { APP_NAME } from "@/common/constants";
 import BuyingVsRenting from "@/module/Home/BuyingVsRenting";
 import ClientsSection from "@/module/Home/ClientsSection";

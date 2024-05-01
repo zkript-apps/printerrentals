@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography } from "../../common/components/ui/Typography";
-import { Button } from "../../common/components/ui/Button";
+import { Typography } from "../ui/Typography";
+import { Button } from "../ui/Button";
 import Link from "next/link";
 
 const Cta = () => {
