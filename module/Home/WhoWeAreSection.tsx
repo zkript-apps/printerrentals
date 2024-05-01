@@ -3,15 +3,23 @@ import HomeImageText from "./HomeImageText";
 import { Typography } from "@/common/components/ui/Typography";
 import { WidthWrapper } from "@/common/components/WidthWrapper";
 
-const WhoWeAreSection = () => {
+interface ImageAnimationProps {
+  animationVariant?: "fade" | "fade-up" | "fade-right";
+}
+
+const WhoWeAreSection = ({ animationVariant }: ImageAnimationProps) => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-light-700">
       <WidthWrapper width="wide" className="">
-        <HomeImageText img={"/who-we-are.png"} description={undefined}>
+        <HomeImageText
+          img={"/who-we-are.png"}
+          animationVariant={animationVariant}
+          description={undefined}
+        >
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             WHO WE ARE
           </Typography>
-          <pre>
+          <code className="font-sans md:whitespace-pre-wrap">
             {`Printer Rentals PH is a full servicer printer rental store that 
 started back in 2004. Through the years of consistent hard 
 work and the goal of providing excellent service to our 
@@ -31,7 +39,7 @@ to make it happen. Above all, being a Christian company, we
 truly acknowledge that God is the true owner of the company 
 and we are all on a mission to provide business solutions 
 that are in accordance with the teachings of the Lord.`}
-          </pre>
+          </code>
         </HomeImageText>
       </WidthWrapper>
     </div>

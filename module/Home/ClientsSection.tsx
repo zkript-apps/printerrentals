@@ -1,27 +1,38 @@
+import FadeInImage from "@/common/components/FadeInImage";
 import { Typography } from "@/common/components/ui/Typography";
+import Link from "next/link";
 import React from "react";
 
 const ClientsSection = () => {
   return (
-    <div className="text-center align-items-center space-y-12 md:mx-20">
+    <div className="text-center mt-20">
       <Typography variant="h2" fontWeight="semibold">
         SOME OF OUR SATISFIED CLIENTS
       </Typography>
-      <div className="md:flex justify-center gap-6 space-y-4 mx-auto">
-        <img
-          src="/ampc.png"
-          className="md:w-1/3 max-w-xs h-28 mx-auto my-auto"
+      <div className="flex flex-wrap justify-center items-center gap-6 md:gap-20 mt-8">
+        <FadeInImage
+          img="/ampc.png"
+          className="w-48 md:w-auto"
           alt="ampc logo"
+          width={300}
+          height={300}
+          variant="fade-up"
         />
-        <img
-          src="/fiberhome.png"
-          className="md:w-1/3 max-w-xs h-30 mx-auto pb-6"
+        <FadeInImage
+          img="/fiberhome.png"
+          className="w-48 md:w-auto"
           alt="fiber logo"
+          width={300}
+          height={300}
+          variant="fade-up"
         />
-        <img
-          src="/banko.png"
-          className="md:w-1/3 max-w-xs h-28 mx-auto pt-2"
+        <FadeInImage
+          img="/banko.png"
+          className="w-48 md:w-auto"
           alt="banko logo"
+          width={300}
+          height={300}
+          variant="fade-up"
         />
       </div>
     </div>

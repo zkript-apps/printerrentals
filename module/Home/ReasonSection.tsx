@@ -23,7 +23,11 @@ const checkItems = [
   },
 ];
 
-const ReasonSection = () => {
+interface ImageAnimationProps {
+  animationVariant?: "fade" | "fade-up" | "fade-right";
+}
+
+const ReasonSection = ({ animationVariant }: ImageAnimationProps) => {
   return (
     <div>
       <WidthWrapper width="wide" className="">
@@ -31,6 +35,7 @@ const ReasonSection = () => {
           img={"/reasonImage.jpg"}
           isRightText={true}
           description={undefined}
+          animationVariant={animationVariant}
         >
           <Typography variant="h1" fontWeight="semibold" className="pb-4 pt-4">
             A FEW REASONS WHY YOU MIGHT WANT TO DO BUSINESS WITH US

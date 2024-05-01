@@ -30,12 +30,12 @@ const Hero = () => {
             before:opacity-75
             before:z-[-5]"
       >
-        <div className="flex flex-col items-center justify-center h-screen p-5 relative z-10">
+        <div className="flex flex-col items-center justify-center h-screen p-8 pt-30 md:mt-10 relative z-10">
           <Typography className="text-center text-white text-5xl">
             THE #1 PRINTER RENTAL <br /> IN THE PHILIPPINES
           </Typography>
 
-          <Typography className="text-2xl text-white pt-12">
+          <Typography className="text-2xl text-white pt-12 mb-4 text-center">
             We are the one of the most reliable rental source of{" "}
             <span>
               <strong>EPSON</strong>
@@ -46,19 +46,23 @@ const Hero = () => {
           <Link href="https://printerrentalsph.com/">
             <Button
               size="lg"
-              className="group relative h-12 w-48 overflow-hidden rounded-lg bg-yellow-500 shadow mt-20"
+              className="group relative h-12 w-48 overflow-hidden rounded-lg bg-secondary-800 shadow md:mt-24"
             >
-              <div className="absolute inset-0 bg-yellow-600 transition-all duration-[250ms] ease-out opacity-0 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-secondary-900 transition-all duration-[250ms] ease-out opacity-0 group-hover:opacity-100"></div>
               <span className="relative text-white text-md">
                 VIEW OUR PRINTERS
               </span>
             </Button>
           </Link>
 
-          <Typography className="text-lg text-white font-semibold mt-24">
-            LEARN MORE
-          </Typography>
-          <LucideCircleChevronDown color="white" />
+          <div className="flex flex-col justify-center items-center">
+            <Typography className="text-lg text-white font-semibold md:mt-24 mt-4">
+              LEARN MORE
+            </Typography>
+            <Link href={"#whyRentPrinter"} className="mx-auto">
+              <LucideCircleChevronDown color="white" />
+            </Link>
+          </div>
         </div>
       </div>
     </>

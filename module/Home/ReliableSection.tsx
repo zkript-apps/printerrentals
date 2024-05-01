@@ -3,18 +3,23 @@ import HomeImageText from "./HomeImageText";
 import { Typography } from "@/common/components/ui/Typography";
 import { WidthWrapper } from "@/common/components/WidthWrapper";
 
-const ReliableSection = () => {
+interface ImageAnimationProps {
+  animationVariant?: "fade" | "fade-up" | "fade-right";
+}
+
+const ReliableSection = ({ animationVariant }: ImageAnimationProps) => {
   return (
-    <div className="bg-gray-100 ">
+    <div className="bg-light-700 ">
       <WidthWrapper width="wide" className="">
         <HomeImageText
           img={"/reliable-printer-rental.png"}
           description={undefined}
+          animationVariant={animationVariant}
         >
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             RELIABLE PRINTER RENTAL - AND MORE
           </Typography>
-          <pre>
+          <code className="font-sans md:whitespace-pre-wrap">
             {`Ah, printing. At one point or another, every business comes across
 the necessity to print something – whether its contracts, flyers,
 and minutes of the meeting or just about anything that has to be in
@@ -28,7 +33,7 @@ not a very common one, truth be told. But do you know that printer
 rental has its own fair share of benefits and advantages? And if you
 are able to pick a dependable company to rent your printers from,
 you’ll never even consider buying your own printers again.`}
-          </pre>
+          </code>
         </HomeImageText>
       </WidthWrapper>
     </div>

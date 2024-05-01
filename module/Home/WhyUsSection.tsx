@@ -3,15 +3,23 @@ import HomeImageText from "./HomeImageText";
 import { Typography } from "@/common/components/ui/Typography";
 import { WidthWrapper } from "@/common/components/WidthWrapper";
 
-const WhyUsSection = () => {
+interface ImageAnimationProps {
+  animationVariant?: "fade" | "fade-up" | "fade-right";
+}
+
+const WhyUsSection = ({ animationVariant }: ImageAnimationProps) => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-light-700">
       <WidthWrapper width="wide" className="">
-        <HomeImageText img={"/printer-rentals-ph.png"} description={undefined}>
+        <HomeImageText
+          img={"/printer-rentals-ph.png"}
+          animationVariant={animationVariant}
+          description={undefined}
+        >
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             WHY PRINTER RENTALS PH?
           </Typography>
-          <pre>
+          <code className="font-sans lg:whitespace-pre-wrap">
             {`Printing is a vital part of any business, and it’s our utmost 
 pleasure to help you achieve the quality of printing that you 
 want for your establishment. Why hire us? Aside from 
@@ -33,7 +41,7 @@ Don’t hesitate to speak with us anytime. It’s high time you
 switch to printer rental, and you know what, there is no more 
 perfect time than today. Let’s get printing and let’s get those 
 paperwork done in no time at all.`}
-          </pre>
+          </code>
         </HomeImageText>
       </WidthWrapper>
     </div>
