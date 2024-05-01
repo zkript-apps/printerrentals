@@ -18,22 +18,21 @@ export const metadata: Metadata = {
 };
 
 const HomePage = () => {
-  return  (
+  return (
     <div>
       <Hero />
-      <FeatureSection animationVariant='fade-up'/>
-      <WhySection animationVariant="fade-right"/>
-      <ReasonSection animationVariant="fade-up"/>
-      <ReliableSection animationVariant="fade"/>
-      <BuyingVsRenting animationVariant="fade-up"/>
-      <WhoWeAreSection animationVariant="fade-right"/>
-      <WhatWeOffer animationVariant="fade-up"/>
-      <WhyUsSection animationVariant="fade-right"/>
-      <ClientsSection/>
-      <Cta/>
+      <FeatureSection animationVariant="fade-up" />
+      <WhySection animationVariant="fade-right" />
+      <ReasonSection animationVariant="fade-up" />
+      <ReliableSection animationVariant="fade" />
+      <BuyingVsRenting animationVariant="fade-up" />
+      <WhoWeAreSection animationVariant="fade-right" />
+      <WhatWeOffer animationVariant="fade-up" />
+      <WhyUsSection animationVariant="fade-right" />
+      <ClientsSection />
+      <Cta />
     </div>
-
-  ) 
+  );
 };
 
 export default HomePage;

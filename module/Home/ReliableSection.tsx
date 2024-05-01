@@ -7,8 +7,7 @@ interface ImageAnimationProps {
   animationVariant?: "fade" | "fade-up" | "fade-right";
 }
 
-
-const ReliableSection = ({animationVariant}: ImageAnimationProps) => {
+const ReliableSection = ({ animationVariant }: ImageAnimationProps) => {
   return (
     <div className="bg-light-700 ">
       <WidthWrapper width="wide" className="">

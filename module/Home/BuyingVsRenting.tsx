@@ -7,7 +7,7 @@ interface ImageAnimationProps {
   animationVariant?: "fade" | "fade-up" | "fade-right";
 }
 
-const BuyingVsRenting = ({animationVariant}: ImageAnimationProps) => {
+const BuyingVsRenting = ({ animationVariant }: ImageAnimationProps) => {
   return (
     <div className="">
       <WidthWrapper width="wide" className="">

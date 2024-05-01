@@ -17,7 +17,7 @@ const HomeImageText: React.FC<HomeImageTextProps> = ({
   description,
   children,
   isRightText = false,
-  animationVariant
+  animationVariant,
 }) => {
   const controls = useAnimation();
   const imageRef = useRef<HTMLDivElement>(null);
@@ -42,18 +42,23 @@ const HomeImageText: React.FC<HomeImageTextProps> = ({
     };
   }, []);
 
-
   return (
-    <div className={`md:flex p-6 ${isRightText ? "flex-row-reverse font-sans" : ""}`}>
+    <div
+      className={`md:flex p-6 ${isRightText ? "flex-row-reverse font-sans" : ""}`}
+    >
       <div className="md:w-1/2 w-full md:p-14 md:pr-8">
         {children ? children : <p>{description}</p>}
       </div>
       <div className="flex justify-center md:p-14">
         <div ref={imageRef} className="w-full rounded-lg md:pt-0 pt-8">
-          <div
-            className="rounded-lg animate-fade"
-          >
-            <FadeInImage img={img} width={500} height={500} alt="Page images" variant={animationVariant}/>
+          <div className="rounded-lg animate-fade">
+            <FadeInImage
+              img={img}
+              width={500}
+              height={500}
+              alt="Page images"
+              variant={animationVariant}
+            />
           </div>
         </div>
       </div>

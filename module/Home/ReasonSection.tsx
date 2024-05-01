@@ -27,8 +27,7 @@ interface ImageAnimationProps {
   animationVariant?: "fade" | "fade-up" | "fade-right";
 }
 
-
-const ReasonSection = ({animationVariant}: ImageAnimationProps) => {
+const ReasonSection = ({ animationVariant }: ImageAnimationProps) => {
   return (
     <div>
       <WidthWrapper width="wide" className="">

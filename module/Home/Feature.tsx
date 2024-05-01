@@ -33,7 +33,7 @@ interface ImageAnimationProps {
   animationVariant?: "fade" | "fade-up" | "fade-right";
 }
 
-const FeatureSection = ({animationVariant}: ImageAnimationProps) => {
+const FeatureSection = ({ animationVariant }: ImageAnimationProps) => {
   return (
     <div className="flex flex-col sm:flex-row items-center justify-center gap-10 p-5 pt-20 pb-20">
       {featureData.map((item) => (

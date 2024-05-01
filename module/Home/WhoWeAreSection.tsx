@@ -7,12 +7,15 @@ interface ImageAnimationProps {
   animationVariant?: "fade" | "fade-up" | "fade-right";
 }
 
-
-const WhoWeAreSection = ({animationVariant}: ImageAnimationProps) => {
+const WhoWeAreSection = ({ animationVariant }: ImageAnimationProps) => {
   return (
     <div className="bg-light-700">
       <WidthWrapper width="wide" className="">
-        <HomeImageText img={"/who-we-are.png"} animationVariant={animationVariant} description={undefined}>
+        <HomeImageText
+          img={"/who-we-are.png"}
+          animationVariant={animationVariant}
+          description={undefined}
+        >
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             WHO WE ARE
           </Typography>

@@ -7,12 +7,15 @@ interface ImageAnimationProps {
   animationVariant?: "fade" | "fade-up" | "fade-right";
 }
 
-
-const WhySection = ({animationVariant}: ImageAnimationProps) => {
+const WhySection = ({ animationVariant }: ImageAnimationProps) => {
   return (
     <div id="whyRentPrinter" className="bg-light-700">
       <WidthWrapper width="wide" className="">
-        <HomeImageText animationVariant={animationVariant} img={"/whyrentimage.png"} description={undefined}>
+        <HomeImageText
+          animationVariant={animationVariant}
+          img={"/whyrentimage.png"}
+          description={undefined}
+        >
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             WHY RENT PRINTER?
           </Typography>

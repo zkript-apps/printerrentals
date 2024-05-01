@@ -19,7 +19,7 @@ const FadeInImage: React.FC<FadeInImageProps> = ({
   height,
   alt,
   variant = "fade",
-  className
+  className,
 }) => {
   const controls = useAnimation();
   const imageRef = useRef<HTMLDivElement>(null);
@@ -55,25 +55,25 @@ const FadeInImage: React.FC<FadeInImageProps> = ({
     }
   }, [controls, isVisible]);
   const fadeVariant: Variants = {
-    hidden: { opacity: 0, x: 50 }, 
-    visible: { opacity: 1, x: 0 }, 
+    hidden: { opacity: 0, x: 50 },
+    visible: { opacity: 1, x: 0 },
   };
-  
+
   const fadeUpVariant: Variants = {
-    hidden: { opacity: 0, y: 50 }, 
-    visible: { opacity: 1, y: 0 }, 
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
   };
-  
+
   const fadeRightVariant: Variants = {
-    hidden: { opacity: 0, x: -50 }, 
+    hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
   };
   const selectedVariant =
     variant === "fade-up"
       ? fadeUpVariant
       : variant === "fade-right"
-      ? fadeRightVariant
-      : fadeVariant;
+        ? fadeRightVariant
+        : fadeVariant;
 
   return (
     <div className={`$className`}>
