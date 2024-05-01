@@ -3,7 +3,12 @@ import HomeImageText from "./HomeImageText";
 import { Typography } from "@/common/components/ui/Typography";
 import { WidthWrapper } from "@/common/components/WidthWrapper";
 
-const WhatWeOffer = () => {
+interface ImageAnimationProps {
+  animationVariant?: "fade" | "fade-up" | "fade-right";
+}
+
+
+const WhatWeOffer = ({animationVariant}: ImageAnimationProps) => {
   return (
     <div className="">
       <WidthWrapper width="wide" className="">
@@ -11,6 +16,7 @@ const WhatWeOffer = () => {
           img={"/what-we-offer-now.png"}
           isRightText={true}
           description={undefined}
+          animationVariant={animationVariant}
         >
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             WHAT WE OFFER

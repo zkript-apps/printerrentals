@@ -8,14 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      animation: {
-        fade: "fadeIn 1s ease-in-out",
-      },
-
-      keyframes: {
-        fadeIn: {
-          from: { opacity: "0" },
-          to: { opacity: "1" },
+      colors: {
+        primary: {
+          700: "#075985",
+          800: "#0c4a6e",
+          900: "#082f49",
+        },
+        secondary: {
+          700: "#fde047",
+          800: "#eab308",
+          900: "#ca8a04",
+        },
+        text: {
+          primary: "#0369a1",
+          secondary: "#eab308",
+          dark: "#111827",
+        },
+        light: {
+          700: "#f3f4f6",
+          800: "#cbd5e1",
+          900: "#64748b",
         },
       },
       backgroundImage: {

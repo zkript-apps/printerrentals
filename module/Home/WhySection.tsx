@@ -3,11 +3,16 @@ import HomeImageText from "./HomeImageText";
 import { Typography } from "@/common/components/ui/Typography";
 import { WidthWrapper } from "@/common/components/WidthWrapper";
 
-const WhySection = () => {
+interface ImageAnimationProps {
+  animationVariant?: "fade" | "fade-up" | "fade-right";
+}
+
+
+const WhySection = ({animationVariant}: ImageAnimationProps) => {
   return (
-    <div id="whyRentPrinter" className="bg-gray-100">
+    <div id="whyRentPrinter" className="bg-light-700">
       <WidthWrapper width="wide" className="">
-        <HomeImageText img={"/whyrentimage.png"} description={undefined}>
+        <HomeImageText animationVariant={animationVariant} img={"/whyrentimage.png"} description={undefined}>
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             WHY RENT PRINTER?
           </Typography>

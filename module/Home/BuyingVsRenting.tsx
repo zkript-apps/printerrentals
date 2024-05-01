@@ -3,7 +3,11 @@ import HomeImageText from "./HomeImageText";
 import { Typography } from "@/common/components/ui/Typography";
 import { WidthWrapper } from "@/common/components/WidthWrapper";
 
-const BuyingVsRenting = () => {
+interface ImageAnimationProps {
+  animationVariant?: "fade" | "fade-up" | "fade-right";
+}
+
+const BuyingVsRenting = ({animationVariant}: ImageAnimationProps) => {
   return (
     <div className="">
       <WidthWrapper width="wide" className="">
@@ -11,6 +15,7 @@ const BuyingVsRenting = () => {
           img={"/buying-and-renting.png"}
           isRightText={true}
           description={undefined}
+          animationVariant={animationVariant}
         >
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             BUYING VS. RENTING

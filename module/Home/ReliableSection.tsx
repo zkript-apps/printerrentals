@@ -3,13 +3,19 @@ import HomeImageText from "./HomeImageText";
 import { Typography } from "@/common/components/ui/Typography";
 import { WidthWrapper } from "@/common/components/WidthWrapper";
 
-const ReliableSection = () => {
+interface ImageAnimationProps {
+  animationVariant?: "fade" | "fade-up" | "fade-right";
+}
+
+
+const ReliableSection = ({animationVariant}: ImageAnimationProps) => {
   return (
-    <div className="bg-gray-100 ">
+    <div className="bg-light-700 ">
       <WidthWrapper width="wide" className="">
         <HomeImageText
           img={"/reliable-printer-rental.png"}
           description={undefined}
+          animationVariant={animationVariant}
         >
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             RELIABLE PRINTER RENTAL - AND MORE

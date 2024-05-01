@@ -1,9 +1,7 @@
-import Cta from "@/common/components/Layout/Cta";
-import FeatureSection from "@/common/components/Layout/Feature";
-import Header from "@/common/components/Layout/Header";
+import Cta from "@/module/Home/Cta";
+import FeatureSection from "@/module/Home/Feature";
 import Hero from "@/common/components/Layout/Hero";
 import { APP_NAME } from "@/common/constants";
-import Home from "@/module/Home";
 import BuyingVsRenting from "@/module/Home/BuyingVsRenting";
 import ClientsSection from "@/module/Home/ClientsSection";
 import ReasonSection from "@/module/Home/ReasonSection";
@@ -23,14 +21,14 @@ const HomePage = () => {
   return  (
     <div>
       <Hero />
-      <FeatureSection/>
-      <WhySection/>
-      <ReasonSection/>
-      <ReliableSection/>
-      <BuyingVsRenting/>
-      <WhoWeAreSection/>
-      <WhatWeOffer/>
-      <WhyUsSection/>
+      <FeatureSection animationVariant='fade-up'/>
+      <WhySection animationVariant="fade-right"/>
+      <ReasonSection animationVariant="fade-up"/>
+      <ReliableSection animationVariant="fade"/>
+      <BuyingVsRenting animationVariant="fade-up"/>
+      <WhoWeAreSection animationVariant="fade-right"/>
+      <WhatWeOffer animationVariant="fade-up"/>
+      <WhyUsSection animationVariant="fade-right"/>
       <ClientsSection/>
       <Cta/>
     </div>

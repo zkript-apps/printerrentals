@@ -46,9 +46,9 @@ const Hero = () => {
           <Link href="https://printerrentalsph.com/">
             <Button
               size="lg"
-              className="group relative h-12 w-48 overflow-hidden rounded-lg bg-yellow-500 shadow md:mt-24"
+              className="group relative h-12 w-48 overflow-hidden rounded-lg bg-secondary-800 shadow md:mt-24"
             >
-              <div className="absolute inset-0 bg-yellow-600 transition-all duration-[250ms] ease-out opacity-0 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-secondary-900 transition-all duration-[250ms] ease-out opacity-0 group-hover:opacity-100"></div>
               <span className="relative text-white text-md">
                 VIEW OUR PRINTERS
               </span>

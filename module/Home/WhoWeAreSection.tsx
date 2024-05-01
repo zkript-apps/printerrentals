@@ -3,11 +3,16 @@ import HomeImageText from "./HomeImageText";
 import { Typography } from "@/common/components/ui/Typography";
 import { WidthWrapper } from "@/common/components/WidthWrapper";
 
-const WhoWeAreSection = () => {
+interface ImageAnimationProps {
+  animationVariant?: "fade" | "fade-up" | "fade-right";
+}
+
+
+const WhoWeAreSection = ({animationVariant}: ImageAnimationProps) => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-light-700">
       <WidthWrapper width="wide" className="">
-        <HomeImageText img={"/who-we-are.png"} description={undefined}>
+        <HomeImageText img={"/who-we-are.png"} animationVariant={animationVariant} description={undefined}>
           <Typography variant="h1" fontWeight="semibold" className="mb-4">
             WHO WE ARE
           </Typography>

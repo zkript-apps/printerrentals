@@ -25,12 +25,12 @@ const Footer = ({
 
             <div className="flex flex-col md:items-center md:mt-18 mt-12">
               <div className="border-yellow-500 w-[80px] pt-2 rounded-sm border-t-4"></div>
-              <Tabs tabs={OPTIONS} className="text-blue-700" />
+              <Tabs tabs={OPTIONS} className="text-primary-800" />
             </div>
 
             <div className="text-xs mt-8">
               &copy; {currentYear} {APP_NAME} | Made by{" "}
-              <span className="text-blue-700 font-semibold">
+              <span className="text-primary-800 font-semibold">
                 Zkript Solutions
               </span>
             </div>
