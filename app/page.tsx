@@ -11,6 +11,7 @@ import WhoWeAreSection from "@/module/Home/WhoWeAreSection";
 import WhySection from "@/module/Home/WhySection";
 import WhyUsSection from "@/module/Home/WhyUsSection";
 import { Metadata } from "next";
+import Printers from "@/module/Printers";
 
 export const metadata: Metadata = {
   title: `Home - ${APP_NAME}`,
@@ -31,6 +32,7 @@ const HomePage = () => {
       <WhyUsSection animationVariant="fade-right" />
       <ClientsSection />
       <Cta />
+      
     </div>
   );
 };
