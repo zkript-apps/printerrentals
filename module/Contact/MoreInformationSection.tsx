@@ -1,6 +1,6 @@
 import { Typography } from "@/common/components/ui/Typography";
 import React from "react";
-import fb_logo from "@/public/facebook_logo.png"
+import fb_logo from "@/public/facebook_logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -43,9 +43,8 @@ Cor Cortez St., Taytay Rizal`}
       <Typography variant="h2" fontWeight="semibold" className="mt-6 mb-4">
         Social Media:
       </Typography>
-      <Link href='https://www.facebook.com/printer.rentals.ph.2024'>
-      <Image src={fb_logo} alt="fb logo" width={50} height={50}/>
-      
+      <Link href="https://www.facebook.com/printer.rentals.ph.2024">
+        <Image src={fb_logo} alt="fb logo" width={50} height={50} />
       </Link>
     </div>
   );

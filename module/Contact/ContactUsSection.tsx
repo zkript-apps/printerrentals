@@ -1,11 +1,11 @@
-import { Typography } from '@/common/components/ui/Typography'
-import React from 'react'
+import { Typography } from '@/common/components/ui/Typography';
+import React from 'react';
 
 const ContactUsSection = () => {
   return (
     <div
-    className="w-full
-        h-screen
+      className="w-full
+        h-64
         relative
         overflow-hidden
         block
@@ -25,13 +25,12 @@ const ContactUsSection = () => {
         before:to-yellow-500
         before:opacity-75
         before:z-[-5]"
-  >
-<div  className="flex flex-col items-center justify-center h-screen p-8 pt-30 md:mt-10 relative z-10">
-    <Typography className="text-center text-white text-5xl">CONTACT US</Typography>
-</div>
-
-  </div>
-  )
+    >
+      <div className="flex items-center justify-center h-full relative z-10">
+        <Typography className="text-center text-white text-5xl">CONTACT US</Typography>
+      </div>
+    </div>
+  );
 }
 
-export default ContactUsSection
+export default ContactUsSection;

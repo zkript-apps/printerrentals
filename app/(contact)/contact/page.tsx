@@ -1,4 +1,5 @@
 import { APP_NAME } from "@/common/constants";
+import Contact from "@/module/Contact";
 import ContactUsSection from "@/module/Contact/ContactUsSection";
 import GetInTouchWithUsSection from "@/module/Contact/GetInTouchWithUsSection";
 import MapSection from "@/module/Contact/MapSection";
@@ -14,16 +15,7 @@ export const metadata: Metadata = {
 const ContactPage = () => {
   return (
     <div>
-      <ContactUsSection />
-      <div className="md:flex">
-        <div className="w-1/2">
-          <GetInTouchWithUsSection />
-        </div>
-        <div className="flex-none">
-          <MoreInformationSection />
-        </div>
-      </div>
-        {/* <MapSection /> */}
+     <Contact/>
     </div>
   );
 };
