@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography } from "../ui/Typography";
-import { Button } from "../ui/Button";
+import { Typography } from "../../common/components/ui/Typography";
+import { Button } from "../../common/components/ui/Button";
 import { LucideCircleChevronDown } from "lucide-react";
 import Link from "next/link";
 
