@@ -1,13 +1,5 @@
-import { WidthWrapper } from "@/common/components/WidthWrapper";
 import { APP_NAME } from "@/common/constants";
-import CoreValuesSection from "@/module/About/CoreValuesSection";
-import FullServicePrinterRentalStoreSection from "@/module/About/FullServicePrinterRentalStoreSection";
-import MissionSection from "@/module/About/MissionSection";
-import OurHistorySection from "@/module/About/OurHistorySection";
-import PagesSection from "@/module/About/PagesSection";
-import PrinterForRentSection from "@/module/About/PrinterForRentSection";
-import SocialMediaSection from "@/module/About/SocialMediaSection";
-import Vision from "@/module/About/VisionSection";
+import About from "@/module/About";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,27 +8,7 @@ export const metadata: Metadata = {
 };
 
 const AboutPage = () => {
-  return (
-    <>
-      <FullServicePrinterRentalStoreSection />
-
-      <WidthWrapper width="wide" className="md:mx-20">
-        <div className="md:flex pt-12">
-          <div className="md:w-2/3">
-            <OurHistorySection />
-            <Vision />
-            <MissionSection />
-            <CoreValuesSection />
-          </div>
-          <div className="pt-4 space-y-4 mx-4">
-            <PrinterForRentSection />
-            <PagesSection />
-            <SocialMediaSection />
-          </div>
-        </div>
-      </WidthWrapper>
-    </>
-  );
+  return <About/>;
 };
 
 export default AboutPage;

@@ -14,16 +14,15 @@ const TitleDescription = ({
 }: TitleDescriptionProps) => {
   return (
     <div className={className}>
-      <div className="flex mt-4"></div>
-      <div className="md:mb-0 mb-4 mx-4">
+      <div className="flex"></div>
+      <div>
         <Typography variant="h2" fontWeight="semibold">
           {title}
         </Typography>
       </div>
-      <div className="mb-4 mx-4">
-      {children}
+      <div>
+        {children}
       </div>
-
     </div>
   );
 };

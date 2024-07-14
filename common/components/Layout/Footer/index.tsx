@@ -30,9 +30,9 @@ const Footer = ({
 
             <div className="text-xs mt-8">
               &copy; {currentYear} {APP_NAME} | Made by{" "}
-              <span className="text-primary-800 font-semibold">
+              <Link href="https://www.zkript.dev/" target="_blank" className="text-primary-800 font-semibold hover:underline">
                 Zkript Solutions
-              </span>
+              </Link>
             </div>
           </div>
         </div>

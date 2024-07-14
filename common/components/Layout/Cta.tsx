@@ -2,11 +2,12 @@ import React from "react";
 import { Typography } from "../ui/Typography";
 import { Button } from "../ui/Button";
 import Link from "next/link";
+import { WidthWrapper } from "../WidthWrapper";
 
 const Cta = () => {
   return (
-    <>
-      <div className="md:grid md:grid-cols-2 md:gap-4 mt-20  md:place-items-center bg-primary-800 flex flex-col h-52 p-4 ">
+    <div className="bg-primary-800 py-16">
+      <WidthWrapper width="medium" className="grid grid-cols-2 place-items-center">
         <div className="text-center mx-auto">
           <Typography
             fontWeight="semibold"
@@ -18,7 +19,7 @@ const Cta = () => {
           </Typography>
         </div>
 
-        <div className="text-center md:mt-0 md:pr-8">
+        <div>
           <Link href="https://printerrentalsph.com/">
             <Button
               size="lg"
@@ -29,8 +30,8 @@ const Cta = () => {
             </Button>
           </Link>
         </div>
-      </div>
-    </>
+      </WidthWrapper>
+    </div>
   );
 };
 

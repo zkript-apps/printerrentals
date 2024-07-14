@@ -39,7 +39,7 @@ glamorous. But that’s why we’re here, we’re the specialists and know every
 about printers so you can spend less time combing through technical specs and 
 more time doing the stuff that’s important.
         `}</code>
-       
+
       </TitleDescription>
     </div>
   );
