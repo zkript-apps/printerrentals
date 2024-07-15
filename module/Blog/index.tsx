@@ -1,10 +1,6 @@
 import React from "react";
-import Blog from "./Blog";
-import { WidthWrapper } from "@/common/components/WidthWrapper";
 import TitleDescriptionLink from "@/common/components/PrinterForRent";
-import BlogItemPhotoDescription from "./BlogItemPhotoDescription";
 import { LucideClock, LucideFolderOpen, LucideTag } from "lucide-react";
-import womanPic from "@/public/woman-question.jpeg";
 import BlogItemComponent from "./BlogItemPhotoDescription";
 
 const items = [
@@ -25,35 +21,38 @@ const socMed = [
   { item: "Instagram", link: "/instagram.com" },
 ];
 
-const blogItem = {
-  imageKey: "/woman-question.jpeg",
-  title: "Difference Between Leasing and Buying Printers | Printer Rentals PH",
-  titleLink: "/difference-between-leasing-and-buying-of-printers",
-  buttonLink: "/difference-between-leasing-and-buying-of-printers",
-  description:"Printers, in businesses small or large, are essential equipment. While companies tend to be digital, there will always be a need for printers. A small business will go through a…",
-  iconDescription: [
-    {
-      icon: <LucideClock size={20} />,
-      description: "June 28, 2024",
-    },
-    {
-      icon: <LucideFolderOpen size={20} />,
-      description: {
-        title: "Printer",
-        link: "/category/printer",
+const blogItems = [
+  {
+    imageKey: "/woman-question.jpeg",
+    title:
+      "Difference Between Leasing and Buying Printers | Printer Rentals PH",
+    titleLink: "/difference-between-leasing-and-buying-of-printers",
+    buttonLink: "/difference-between-leasing-and-buying-of-printers",
+    description:
+      "Printers, in businesses small or large, are essential equipment. While companies tend to be digital, there will always be a need for printers. A small business will go through a…",
+    iconDescription: [
+      {
+        icon: <LucideClock size={20} />,
+        description: "June 28, 2024",
       },
-    },
-    {
-      icon: <LucideTag size={20} />,
-      description: [
-        { title: "Buying", link: "/tag/buying" },
-        { title: "Leasing", link: "/tag/leasing" },
-        { title: "Printer Rental", link: "/tag/printer-rental" },
-      ],
-    },
-  ],
-};
-const blogItem2 = {
+      {
+        icon: <LucideFolderOpen size={20} />,
+        description: {
+          title: "Printer",
+          link: "/category/printer",
+        },
+      },
+      {
+        icon: <LucideTag size={20} />,
+        description: [
+          { title: "Buying", link: "/tag/buying" },
+          { title: "Leasing", link: "/tag/leasing" },
+          { title: "Printer Rental", link: "/tag/printer-rental" },
+        ],
+      },
+    ],
+  },
+  {
     imageKey: "/hand-okay.png",
     title: "What are the Benefits of Renting a Printer? | Printer Rentals PH",
     titleLink: "/benefits-of-renting-a-printer",
@@ -80,8 +79,8 @@ const blogItem2 = {
         ],
       },
     ],
-  };
-  const blogItem3 = {
+  },
+  {
     imageKey: "/paper-printer.jpeg",
     title: "How much does it cost to rent a printer? | Printer Rentals PH",
     titleLink: "/benefits-of-renting-a-printer",
@@ -108,35 +107,34 @@ const blogItem2 = {
         ],
       },
     ],
-  };
+  },
+];
+
 const printerTitle = "Printer for Rent";
 const pagesTitle = "Pages";
 const socMedTitle = "Social Media";
 
 const index = () => {
   return (
-    <div>
-      <Blog />
-      <WidthWrapper width="medium">
-        <div className="sm:flex w-full items-start gap-16 mt-20">
-          <div className="w-full sm:w-2/3">
-            <BlogItemComponent blogItem={blogItem} />
-            <BlogItemComponent blogItem={blogItem2} />
-            <BlogItemComponent blogItem={blogItem3} />
+    <div className="mx-4 md:mx-10 2xl:mx-auto mt-10 md:mt-14 lg:mt-20">
+      <div className="sm:flex w-full items-start gap-16">
+        <div className="w-full md:w-2/3 lg:w-[740px]">
+          {blogItems.map((index, key) => (
+            <BlogItemComponent blogItem={index} key={key} />
+          ))}
+        </div>
+        <div className="space-y-4">
+          <div>
+            <TitleDescriptionLink itemLinks={items} title={printerTitle} />
           </div>
-          <div className="space-y-4">
-            <div>
-              <TitleDescriptionLink itemLinks={items} title={printerTitle} />
-            </div>
-            <div>
-              <TitleDescriptionLink itemLinks={pages} title={pagesTitle} />
-            </div>
-            <div>
-              <TitleDescriptionLink itemLinks={socMed} title={socMedTitle} />
-            </div>
+          <div>
+            <TitleDescriptionLink itemLinks={pages} title={pagesTitle} />
+          </div>
+          <div>
+            <TitleDescriptionLink itemLinks={socMed} title={socMedTitle} />
           </div>
         </div>
-      </WidthWrapper>
+      </div>
     </div>
   );
 };

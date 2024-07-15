@@ -1,11 +1,13 @@
-import { Typography } from '@/common/components/ui/Typography';
-import React from 'react';
+import { Typography } from "@/common/components/ui/Typography";
+import React from "react";
 
-const Blog = () => {
+const Banner = () => {
   return (
     <div
       className="w-full
-        h-64
+        h-28
+        md:h-40
+        lg:h-[216px]
         relative
         overflow-hidden
         block
@@ -27,10 +29,12 @@ const Blog = () => {
         before:z-[-5]"
     >
       <div className="flex items-center justify-center h-full relative">
-        <Typography className="text-center text-white text-5xl">Blog</Typography>
+        <Typography className="text-white text-[40px] uppercase">
+          Blog
+        </Typography>
       </div>
     </div>
   );
-}
+};
 
-export default Blog;
+export default Banner;
