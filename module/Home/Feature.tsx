@@ -35,11 +35,11 @@ interface ImageAnimationProps {
 
 const FeatureSection = ({ animationVariant }: ImageAnimationProps) => {
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-center gap-10 p-5 pt-20 pb-20">
+    <div className="flex flex-col sm:flex-row items-center justify-center gap-10 p-5 pt-20 pb-20 max-w-[1140px] mx-4 md:mx-10 2xl:mx-auto">
       {featureData.map((item) => (
         <div
           key={item.title}
-          className="flex flex-col items-center justify-center text-center w-full sm:w-1/4"
+          className="flex flex-col items-center justify-center text-center w-full"
         >
           <div className="mb-5">
             <FadeInImage

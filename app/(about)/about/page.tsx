@@ -20,9 +20,9 @@ const AboutPage = () => {
     <>
       <FullServicePrinterRentalStoreSection />
 
-      <WidthWrapper width="wide" className="md:mx-20">
-        <div className="md:flex pt-12">
-          <div className="md:w-2/3">
+      <WidthWrapper width="medium">
+        <div className="md:flex pt-12 md:mx-6 max-w-[1140px] 2xl:mx-auto">
+          <div className="md:max-w-[65%] lg:max-w-[75%]">
             <OurHistorySection />
             <Vision />
             <MissionSection />

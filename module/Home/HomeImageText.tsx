@@ -44,13 +44,13 @@ const HomeImageText: React.FC<HomeImageTextProps> = ({
 
   return (
     <div
-      className={`md:flex p-6 ${isRightText ? "flex-row-reverse font-sans" : ""}`}
+      className={`md:flex ${isRightText ? "flex-row-reverse font-sans" : ""}`}
     >
-      <div className="md:w-1/2 w-full md:p-14 md:pr-8">
+      <div className="lg:w-1/2 w-full pt-8 md:p-10 md:pr-8">
         {children ? children : <p>{description}</p>}
       </div>
       <div className="flex justify-center md:p-14">
-        <div ref={imageRef} className="w-full rounded-lg md:pt-0 pt-8">
+        <div ref={imageRef} className="w-full rounded-lg md:pt-0 pt-8 pb-8 md:pb-0">
           <div className="rounded-lg animate-fade">
             <FadeInImage
               img={img}

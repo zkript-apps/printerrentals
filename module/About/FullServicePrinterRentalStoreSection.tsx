@@ -6,11 +6,11 @@ import { WidthWrapper } from "@/common/components/WidthWrapper";
 
 const FullServicePrinterRentalStoreSection = () => {
   return (
-       <div className="bg-secondary-800 py-12  md:px-0 px-8">
-    <WidthWrapper width="wide" className="md:mx-20">
+       <div className="bg-secondary-800 py-12 md:px-0">
+    <WidthWrapper width="medium">
 
-      <div className="md:flex mx-4">
-        <div className="md:w-3/4 md:pr-12">
+      <div className="md:flex mx-4 md:mx-10 2xl:mx-auto">
+        <div className="md:w-3/4 2xl:w-[968px] md:pr-12">
           <Typography
             variant="h1"
             fontWeight="semibold"

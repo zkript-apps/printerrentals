@@ -5,7 +5,7 @@ import React from "react";
 
 const ClientsSection = () => {
   return (
-    <div className="text-center mt-20">
+    <div className="text-center mt-20 mx-6 md:mx-10 lg:mx-0">
       <Typography variant="h2" fontWeight="semibold">
         SOME OF OUR SATISFIED CLIENTS
       </Typography>

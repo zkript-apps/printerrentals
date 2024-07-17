@@ -6,7 +6,8 @@ import Link from "next/link";
 const Cta = () => {
   return (
     <>
-      <div className="md:grid md:grid-cols-2 md:gap-4 mt-20  md:place-items-center bg-primary-800 flex flex-col h-52 p-4 ">
+    <div className="w-full bg-primary-800">
+      <div className="md:grid md:grid-cols-2 md:gap-4 mt-20 md:place-items-center max-w-[1140px] mx-auto flex flex-col h-52 p-4 ">
         <div className="text-center mx-auto">
           <Typography
             fontWeight="semibold"
@@ -29,6 +30,7 @@ const Cta = () => {
             </Button>
           </Link>
         </div>
+      </div>
       </div>
     </>
   );
