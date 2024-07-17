@@ -1,6 +1,6 @@
+import Cta from "@/common/components/Layout/Cta";
 import { APP_NAME } from "@/common/constants";
 import Blog from "@/module/Blog";
-import Cta from "@/module/Home/Cta";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <div>
       <Blog />
-      <Cta/>
+      <Cta />
     </div>
   );
 };
