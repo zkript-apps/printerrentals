@@ -15,7 +15,7 @@ interface ItemLinkProps {
 const TitleDescriptionLink = ({ itemLinks, title }: ItemLinkProps) => {
   return (
     <div>
-      <Typography variant="h1" fontWeight="semibold">
+      <Typography variant="h1" fontWeight="bold">
         {title}
       </Typography>
       <div className="border-yellow-500 w-[60px] py-2 mt-2 rounded-sm border-t-4"></div>
@@ -24,10 +24,7 @@ const TitleDescriptionLink = ({ itemLinks, title }: ItemLinkProps) => {
           <ul className="text-primary-800">
             <Link href={items.link}>
               <li className="hover:text-secondary-800 transition-colors duration-200 hover:cursor-pointer">
-                <Typography variant='h2'>
-                    {items.item}
-                </Typography>
-                
+                <Typography variant="h2">{items.item}</Typography>
               </li>
             </Link>
           </ul>
