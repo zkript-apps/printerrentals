@@ -30,7 +30,8 @@ interface ImageAnimationProps {
 const ReasonSection = ({ animationVariant }: ImageAnimationProps) => {
   return (
     <div>
-      <WidthWrapper width="wide" className="">
+      <WidthWrapper width="wide">
+      <div className="max-w-[1180px] mx-4 2xl:mx-auto">
         <HomeImageText
           img={"/reasonImage.jpg"}
           isRightText={true}
@@ -68,6 +69,7 @@ const ReasonSection = ({ animationVariant }: ImageAnimationProps) => {
             </span>
           </p>
         </HomeImageText>
+        </div>
       </WidthWrapper>
     </div>
   );
