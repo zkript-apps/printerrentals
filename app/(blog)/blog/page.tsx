@@ -17,7 +17,6 @@ const BlogPage = () => {
       <WidthWrapper width="medium">
         <Blog />
       </WidthWrapper>
-
       <Cta />
     </div>
   );
