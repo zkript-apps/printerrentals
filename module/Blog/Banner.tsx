@@ -29,7 +29,7 @@ const Banner = () => {
         before:z-[-5]"
     >
       <div className="flex items-center justify-center h-full relative">
-        <Typography className="text-white text-[40px] uppercase">
+        <Typography className="text-white text-[30px] md:text-[40px] uppercase">
           Blog
         </Typography>
       </div>
