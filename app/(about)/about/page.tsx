@@ -21,14 +21,14 @@ const AboutPage = () => {
       <FullServicePrinterRentalStoreSection />
 
       <WidthWrapper width="medium">
-        <div className="md:flex pt-12 md:mx-6 max-w-[1140px] 2xl:mx-auto">
+        <div className="md:flex pt-12 md:mx-6 max-w-[1174px] 2xl:mx-auto">
           <div className="md:max-w-[65%] lg:max-w-[75%]">
             <OurHistorySection />
             <Vision />
             <MissionSection />
             <CoreValuesSection />
           </div>
-          <div className="pt-4 space-y-4 mx-4">
+          <div className="pt-4 space-y-4 mx-12">
             <PrinterForRentSection />
             <PagesSection />
             <SocialMediaSection />

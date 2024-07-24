@@ -20,7 +20,6 @@ Creative, resourceful, self-confident and customer focused are Printer Rentals P
          
 We’re highly customer focused and have an outstanding team determined to deliver the best experience possible. Don’t worry, we get it. Renting for printers isn’t all that glamorous. But that’s why we’re here, we’re the specialists and know everythingabout printers so you can spend less time combing through technical specs and more time doing the stuff that’s important.
         `}</code>
-       
       </TitleDescription>
     </div>
   );

@@ -116,7 +116,7 @@ const socMedTitle = "Social Media";
 
 const index = () => {
   return (
-    <div className="mx-4 md:mx-10 2xl:mx-auto mt-10 md:mt-14 lg:mt-20">
+    <div className="max-w-[1140px] mx-4 md:mx-10 2xl:mx-auto 2xl:-translate-x-[78px] mt-10 md:mt-14 lg:mt-20">
       <div className="sm:flex w-full items-start gap-16">
         <div className="w-full md:w-2/3 lg:w-[740px]">
           {blogItems.map((index, key) => (
