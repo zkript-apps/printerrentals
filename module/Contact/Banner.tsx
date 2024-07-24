@@ -10,7 +10,7 @@ const Banner = () => {
             block
             z-10
 						
-            bg-[url('https://printerrentalsph.com/wp-content/uploads/2019/01/nordwood-themes-469906-unsplash.jpg')]
+            bg-[url('/man-using-phone.jpg')]
             bg-cover
             bg-no-repeat
             bg-center

@@ -13,7 +13,7 @@ const Banner = () => {
         block
         z-10
                     
-        bg-[url('/hero.jpg')]
+        bg-[url('/working-at-office.jpg')]
         bg-cover
         bg-no-repeat
         bg-center

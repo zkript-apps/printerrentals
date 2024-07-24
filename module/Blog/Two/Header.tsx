@@ -29,7 +29,7 @@ const Header = () => {
         before:z-[-5]
         "
     >
-      <div className="mx-8 md:mx-14 2xl:mx-auto max-w-7xl">
+      <div className="max-w-[1140px] mx-8 md:mx-14 2xl:mx-auto max-w-7xl">
         <div className="absolute bottom-11 md:bottom-12">
           <Typography className="text-3xl md:text-[40px] text-white max-w-6xl leading-[42px] md:leading-[56px]">
             What are the Benefits of Renting a Printer? | Printer Rentals PH
