@@ -67,6 +67,7 @@ const PrinterContent = () => {
               <br />
               Product
             </Button>
+            {/* Small and extra large screen view */}
             <div className="block md:hidden xl:block">
               <nav
                 aria-label="Tabs"
@@ -120,6 +121,7 @@ const PrinterContent = () => {
               </div>
             </div>
           </div>
+          {/* Medium - large screen view */}
           <div className="hidden md:block xl:hidden col-span-2">
             <nav
               aria-label="Tabs"
