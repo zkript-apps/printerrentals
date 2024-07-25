@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import j100 from "@/common/assets/brother-j100.jpeg";
 import { Typography } from "@/common/components/ui/Typography";
 import { Button } from "@/common/components/ui/Button";
 import { cn } from "@/common/helpers/cn";
@@ -9,7 +8,6 @@ import { useState } from "react";
 import EnquiryModal from "./Modal/EnquiryModal";
 import { printers } from "../printersData";
 import { useParams } from "next/navigation";
-import List from "./List";
 
 const PrinterContent = () => {
   const [currentTab, setCurrentTab] = useState("description");
