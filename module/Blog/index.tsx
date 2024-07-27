@@ -33,7 +33,7 @@ const blogItems = [
     iconDescription: [
       {
         icon: <LucideClock size={20} />,
-        description: "June 28, 2024",
+        description: "July 3, 2019",
       },
       {
         icon: <LucideFolderOpen size={20} />,
@@ -62,7 +62,7 @@ const blogItems = [
     iconDescription: [
       {
         icon: <LucideClock size={20} />,
-        description: "June 28, 2024",
+        description: "July 3, 2019",
       },
       {
         icon: <LucideFolderOpen size={20} />,
@@ -90,7 +90,7 @@ const blogItems = [
     iconDescription: [
       {
         icon: <LucideClock size={20} />,
-        description: "June 28, 2024",
+        description: "February 17, 2019",
       },
       {
         icon: <LucideFolderOpen size={20} />,

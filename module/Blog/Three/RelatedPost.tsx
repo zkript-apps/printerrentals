@@ -12,7 +12,7 @@ const blogItem = {
   iconDescription: [
     {
       icon: <LucideClock size={20} />,
-      description: "June 28, 2024",
+      description: "July 3, 2019",
     },
     {
       icon: <LucideFolderOpen size={20} />,
@@ -42,7 +42,7 @@ const blogItem2 = {
   iconDescription: [
     {
       icon: <LucideClock size={20} />,
-      description: "June 28, 2024",
+      description: "July 3, 2019",
     },
     {
       icon: <LucideFolderOpen size={20} />,
@@ -65,7 +65,7 @@ const RelatedPost = () => {
   return (
     <div>
       <Typography className="text-[22px] md:text-2xl">Related Posts</Typography>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-8">
         <BlogItemComponent blogItem={blogItem} />
         <BlogItemComponent blogItem={blogItem2} />
       </div>

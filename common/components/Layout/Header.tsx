@@ -69,7 +69,7 @@ const Header = () => {
       <div
         className={`transition-all duration-200 ease-in-out transform origin-top ${
           isMenuOpen ? "scale-y-100" : "scale-y-0"
-        } md:scale-y-100 fixed md:relative top-16 inset-x-0 md:top-auto bg-gray-50 p-5 md:p-0 md:bg-transparent md:flex`}
+        } md:scale-y-100 fixed md:relative top-16 inset-x-0 md:top-auto bg-gray-50 p-5 md:p-0 md:bg-transparent md:flex z-[999]`}
       >
         <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 list-none pr-1 md:pr-8">
           {links.map((link) => (
